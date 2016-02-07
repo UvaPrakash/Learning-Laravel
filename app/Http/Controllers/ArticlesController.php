@@ -16,7 +16,7 @@ class ArticlesController extends Controller
 {
     public function __construct()
     {
-       // $this->middleware('auth',['only' => 'create']); //can use except instead of only
+        $this->middleware('auth',['only' => 'create']); //can use except instead of only
     }
     
     public function index()
